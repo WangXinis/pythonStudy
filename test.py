@@ -31,3 +31,12 @@ pattern="(cd){1,}"
 string="testcdcdcdcdwang this is a test";
 result=re.search(pattern,string)
 print(result)
+"""
+    下面是模式修正
+    I 匹配时忽略大小写
+    M 多行匹配
+    L 做本地化识别
+    U 根据Unicode字符解析字符
+    S 让.可以匹配换行符，就是用了这个之后.可以匹配任意字符了
+"""
+
