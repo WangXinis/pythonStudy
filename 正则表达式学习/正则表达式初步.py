@@ -1,4 +1,6 @@
 import re
+import  shelve
+
 # \d 匹配数字  *是匹配一次或者多次
 string="125789pythonad123"
 pattern="\d*"
