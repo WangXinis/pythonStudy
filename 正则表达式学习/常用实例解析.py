@@ -26,6 +26,26 @@ result=re.search(pattern,string)
 print(result)
 result2=re.search(pattern,string2)
 print(result2)
+"""
+    其他匹配电子邮件的方式
+"""
+pattern="\w+"
+string="srt+skz-ws"
+result=re.search(pattern,string)
+print(result)
+"""
+    [.+ -]是. + -中的一个
+"""
+pattern1="\w+([.+-]\w+)*"
+"""
+    修改一下string1看看 比如
+    string1="iam.sthi"
+    string1="iam+sthi"
+    string1="iam-sthi"
+"""
+string1="\n\n\niam-sthi"
 
+result1=re.search(pattern1,string1)
+print(result1)
 
 
