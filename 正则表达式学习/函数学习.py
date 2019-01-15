@@ -32,4 +32,16 @@ pattern=".python."
 re_pattern=re.compile(pattern)
 result=re_pattern.findall(string)
 print(result)
-
+"""
+    re.sub()函数
+    用正则表达式实现某些字符的替换 
+    re.sub(pattern,rep,string,max)
+"""
+string="hellomypythonhispythonourpythonend"
+pattern=".python."
+# 默认是全部替换
+result=re.sub(pattern,"php",string)
+#最多替换两次
+result2=re.sub(pattern,"php",string,2)
+print(result)
+print(result2)
