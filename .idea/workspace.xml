@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe344d5a-39eb-4192-92d8-b6337d4a2846" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/正则表达式学习/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/正则表达式学习/正则表达式初步.py" afterDir="false" />
-    </list>
+    <list default="true" id="fe344d5a-39eb-4192-92d8-b6337d4a2846" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="py" value="3247" />
+          <entry key="py" value="3335" />
           <entry key="sql" value="15" />
           <entry key="txt" value="24" />
         </counts>
@@ -59,19 +55,21 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="31" />
-          <entry key="Python" value="3247" />
+          <entry key="Python" value="3335" />
           <entry key="Scratch" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="cfg" value="1" />
+          <entry key="py" value="6" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Ini" value="1" />
+          <entry key="Python" value="6" />
           <entry key="Scratch" value="3" />
         </counts>
       </usages-collector>
@@ -79,16 +77,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/正则表达式学习/正则表达式初步.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
+            <state relative-caret-position="641">
               <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/随机选择/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/随机选择/初步.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python原生库的爬虫/example/scrapy.cfg">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -131,6 +148,7 @@
         <option value="$PROJECT_DIR$/正则表达式学习/常用实例解析.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b32f1a9-6f6b-4031-b9ae-95bdb6e86008/console.sql" />
         <option value="$PROJECT_DIR$/正则表达式学习/正则表达式初步.py" />
+        <option value="$PROJECT_DIR$/随机选择/初步.py" />
       </list>
     </option>
   </component>
@@ -173,6 +191,24 @@
             <path>
               <item name="pythonStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="pythonStudy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="python原生库的爬虫" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="python原生库的爬虫" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="python原生库的爬虫" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -369,7 +405,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" x="73" y="62" width="341" height="631" id="Project" order="0" visible="true" weight="0.24963397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -446,13 +482,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/正则表达式学习/正则表达式初步.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
+        <state relative-caret-position="641">
           <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/随机选择/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/随机选择/初步.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python原生库的爬虫/example/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
