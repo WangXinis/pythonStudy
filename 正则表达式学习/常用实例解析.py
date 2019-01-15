@@ -16,5 +16,16 @@ string="13176221906"
 result=re.search(pattern,string)
 print(result)
 
+"""
+    匹配电子邮件地址
+"""
+string="wangxinel2016@163.com"
+string2="91466593@qq.com"
+pattern=".*@.*[.com]"
+result=re.search(pattern,string)
+print(result)
+result2=re.search(pattern,string2)
+print(result2)
+
 
 
