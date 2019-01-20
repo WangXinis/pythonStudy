@@ -9,7 +9,8 @@ def save_cookie(url, cookie_filename):
     cookieStr = ''
     for item in cookie:
         cookieStr = cookieStr + item.name + '=' + item.value + ';'
-    print(cookieStr)
+        print(cookieStr)
+    # print(cookieStr)
     cookie.save()
  
  

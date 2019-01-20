@@ -17,6 +17,7 @@ req=urllib.request.Request(url,post_data)
 req.add_header('User-Agent','Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36')
 #使用http.cookiejar.CookieJar()创建CookieJar对象
 cjar=http.cookiejar.CookieJar()
+print("cjar的内容是:"+str(cjar))
 #使用HTTPCookieProcessor创建cookie处理器，并且用它作为参数构建opener对象
 opener=urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cjar))
 urllib.request.install_opener(opener)
