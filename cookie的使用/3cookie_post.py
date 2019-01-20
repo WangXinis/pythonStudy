@@ -28,3 +28,6 @@ def scrapyIt(url2="http://www.chinaunix.net/"):
 	fandle2.close()
 login()
 scrapyIt()
+"""
+ in 12th file ， I upgrade it 
+"""
