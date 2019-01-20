@@ -83,5 +83,5 @@ if __name__ == '__main__':
     getOtherPage(url)
 """
     这个程序在我写完的时候可以执行，以后我会在文件中标注我写的程序哪些是失败的作品
-    this program can execute when I finshed.for easy to read,after finishing file,I will comment failure or success in the end  
+    this program can execute when I finshed.for easy to read,after finishing file,I will comment failure or success in the  
 """

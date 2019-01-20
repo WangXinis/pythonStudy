@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+        <title>登录</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg">
+
+<h2 class="logo-cu"></h2>
+    <script>
+        //113.129.92.247
+        //113.129.92.247
+        var needverify=0;
+    </script>
+    <div class="box">
+        <div class="nav"><a href="/login" class="here"> 登录 <i></i> </a> <a href="/register"> 注册 <i></i> </a>
+        </div>
+        <form class="popup" method="post">
+            <ul class="list">
+                <li class="form-item">
+                    <div class="inp_box">
+                        <div class="inp_box_1"><span class="user"></span>
+                            <input value="" placeholder="用户名/手机号" id="username" maxlength="36" type="text" class="inp">
+                        </div>
+                    </div>
+                    <div class="error hide" for="username"></div>
+                </li>
+                <li class="form-item">
+                    <div class="inp_box">
+                        <div class="inp_box_1"><span class="password"></span>
+                            <input value="" placeholder="密码" id="password" maxlength="36" type="password" class="inp">
+                        </div>
+                    </div>
+                    <div class="error hide" for="password"></div>
+                </li>
+                <li class="slide_code" id="slide_code" style="display: none;">
+                    <div class="inp_box inp_box_gee">
+                        <div id="embed-captcha"></div>
+                        <p id="wait" class="show">正在加载验证码......</p>
+                        <p id="notice" class=hide>请先完成验证</p>
+                    </div>
+                    <div class="error hide" for="embed-captcha"></div>
+                </li>
+                <li>
+                    <div class="forgot"><a href="/forgotPassword/phone" target="_self">找回密码</a></div>
+                </li>
+                <li><input class="submit-btn" value="登录" id="btnSubmit" type="button"></li>
+            </ul>
+            <input type="hidden" name="_token" value="XnvdsCqfMIRmES1Lt2rFdU4jXH21fAOqiZCARoR6">
+        </form>
+        <div class="title"><span>登录方式</span></div>
+        <ul class="login_ways" id="login_ways">
+            <li class="phone"><a type="1">手机验证码登录</a></li>
+            <li class="pwd"><a class="here" type="2">密码登录</a></li>
+            <li class="overseas"><a type="3">海外手机号登录</a></li>
+        </ul>
+    </div>
+    <script src="/static/js/login.js?id=5512b7f540646d2e2635"></script>
+
+
+</body>
+</html>
