@@ -25,8 +25,12 @@ pattern="wangs?"
 result=re.search(pattern,string)
 print(result)
 # |模式选择符号，可以设置多个模式
-pattern="python|java"
+pattern="python|java1"
 string ="I study java and python"
+result=re.search(pattern,string)
+print(result)
+pattern="python|java1"
+string ="I study java1 and python"
 result=re.search(pattern,string)
 print(result)
 result=re.match(pattern,string,1)
@@ -73,4 +77,17 @@ string="abcdpython_xyyy"
 result1=re.search(pattern1,string)
 result2=re.search(pattern2,string)
 print(result1)
+print(result2)
+pattern1 ="p.*y" # 贪婪模式
+
+pattern2 ="p.*?y" # 懒惰模式
+
+string ="abcdfphp345Pythony_py"
+
+result1= re.search(pattern1,string)
+
+result2= re.search(pattern2,string,re.I)
+
+print(result1)
+
 print(result2)
