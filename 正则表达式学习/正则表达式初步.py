@@ -16,6 +16,9 @@ string ="helloworld"
 pattern="^hello"
 result=re.search(pattern,string)
 print(result)
+pattern="world$"
+result=re.search(pattern,string)
+print(result)
 #？匹配0次或者1次前面的原子
 string ="wangsin"
 pattern="wangs?"
