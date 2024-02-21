@@ -1,15 +1,15 @@
-# -*- coding: utf-8 -*-
-
 # Define here the models for your spider middleware
 #
 # See documentation in:
-# https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+# https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-import browsercookie
-from scrapy.downloadermiddlewares.cookies import CookiesMiddleware
 
-class BrowserCookieSpiderMiddleware(object):
+# useful for handling different item types with a single interface
+from itemadapter import is_item, ItemAdapter
+
+
+class CraigslistSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -32,7 +32,7 @@ class BrowserCookieSpiderMiddleware(object):
         # Called with the results returned from the Spider, after
         # it has processed the response.
 
-        # Must return an iterable of Request, dict or Item objects.
+        # Must return an iterable of Request, or item objects.
         for i in result:
             yield i
 
@@ -40,24 +40,23 @@ class BrowserCookieSpiderMiddleware(object):
         # Called when a spider or process_spider_input() method
         # (from other spider middleware) raises an exception.
 
-        # Should return either None or an iterable of Response, dict
-        # or Item objects.
+        # Should return either None or an iterable of Request or item objects.
         pass
 
     def process_start_requests(self, start_requests, spider):
         # Called with the start requests of the spider, and works
         # similarly to the process_spider_output() method, except
-        # that it doesn't have a response associated.
+        # that it doesn’t have a response associated.
 
         # Must return only requests (not items).
         for r in start_requests:
             yield r
 
     def spider_opened(self, spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)
 
 
-class BrowserCookieDownloaderMiddleware(object):
+class CraigslistDownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
@@ -101,20 +100,4 @@ class BrowserCookieDownloaderMiddleware(object):
         pass
 
     def spider_opened(self, spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
-# 自定义的爬虫实现
-class BrowserCookiesMiddleware(CookiesMiddleware):
-    def __init__(slef,debug=False):
-        super().__init__(debug)
-        self.load_browser_cookies()
-    def load_browser_cookies(self):
-        # 加载Chrome浏览器中的Cookie
-        jar = self.jars['chrome']
-        chrome_cookiejar = browsercookie.chrome()
-        for cookie in chrome_cookiejar:
-            jar.set_cookie(cookie)
-        # 加载Chrome浏览器中的Cookie
-        jar = self.jars['firefox']
-        firefox_cookiejar = browsercookie.firefox()
-        for cookie in firefox_cookiejar:
-            jar.set_cookie(cookie)
+        spider.logger.info("Spider opened: %s" % spider.name)
