@@ -1,0 +1,11 @@
+<p>You searched for: <strong>{{ query }}</strong></p>
+{% if  boards%}
+ <p>Found {{ boards|length }} board{{ boards|pluralize }}.</p>
+ <ul>
+ {% for board in boards %}
+ <li>{{ board.name }}</li>
+ {% endfor %}
+ </ul>
+{% else %}
+ <p>No boards matched your search criteria.</p>
+{% endif %}
