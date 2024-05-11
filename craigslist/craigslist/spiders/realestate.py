@@ -5,7 +5,14 @@ class RealestateSpider(scrapy.Spider):
     name = "realestate"
     allowed_domains = ["newyork.craigslist.org"]
     start_urls = ["https://newyork.craigslist.org/d/real-estate/search/rea"]
-    """def parse(self, response):
+    """
+    def parse(self, response):
+        print("\n")
+        print("HTTP STATUS: "+str(response.status))
+        print(response.css("title::text").get())
+        print("\n")
+        """
+    def parse(self, response):
         allAds = response.css("p.result-info")
 
         for ad in allAds:
@@ -20,12 +27,4 @@ class RealestateSpider(scrapy.Spider):
             print(price)
             print(link)
 
-            print("\n")
-    
-        """
-    def parse(self, response):
-        print("\n")
-        print("HTTP STATUS: "+str(response.status))
-        print(response.css("title::text").get())
-        print("\n")
-    
+            print(\n")
