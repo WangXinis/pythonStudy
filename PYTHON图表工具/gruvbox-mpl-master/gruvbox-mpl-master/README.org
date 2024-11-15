@@ -1,0 +1,57 @@
+#+title: A gruvbox style for Matplotlib
+
+A simple, dark-background color style for the [[http://www.matplotlib.org][Matplotlib]] plotting
+library for Python, based on Pavel Pertsevs [[https://github.com/morhetz/gruvbox][Gruvbox]] color palette and
+theme, that I have mainly made to fit in to my Emacs/org-mode theme.
+
+I may include the light-background Gruvbox variant later, but I mainly
+made this to have a good dark-background style.
+
+I made this based on this [[https://www.hfstevance.com/blog/2019/7/22/matplotlib-style][blog post]] Héloïse Stevance ([[https://twitter.com/sydonahi][@sydonahi]] on
+Twitter), and adding a bit of extra spice.
+
+* Screenshots
+This is what a simple multi line plot looks like. The data used are
+filter throughput curves for the UVIS and IR channels at the Hubble
+Space Telescope.
+
+#+attr_org: :width 700px
+#+attr_html: :width 500px
+#+caption: Plot of Hubble Space Telescope filter throughputs for illustration.
+[[file:screenshots/HSTFilterPlot.png]]
+
+a screenshot of an org-mode session, playing with galaxy SED fitting
+with [[https://github.com/ACCarnall/bagpipes][Bagpipes]]:
+
+#+attr_org: :width 700px
+#+attr_html: :width 900px
+#+caption: Emacs with the Gruvbox theme, running data analysis with org-babel and
+#+caption: the gruvbox-mpl plotting style enabled.
+[[file:screenshots/org-mode-session.png]]
+
+
+* Installation
+To try it out, place the file ~gruvbox.mplstyle~ in the folder you are
+working in, and insert the lines:
+
+#+begin_src python :results silent
+  import matplotlib.pyplot as plt
+  plt.style.use('gruvbox.mplstyle')
+#+end_src
+
+to your script or notebook.
+
+To make it available from anywhere, follow the instructions in the
+blog post linked above.
+
+* Misc.
+- The theme sets a background color for the figure canvas and one for
+  the Axes. If you want the figure canvas to be transparent, set:
+  
+ #+begin_src python
+   import matplotlib.pyplot as plt
+   plt.rcParams['figure.facecolor'] = 'none'
+ #+end_src
+ 
+  somewhere in your working code, or comment out the corresponding
+  line in the ~.mplstyle~ file to get rid of it for good.
