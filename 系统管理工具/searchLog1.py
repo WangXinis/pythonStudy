@@ -5,11 +5,13 @@
 import re
 
 # 正则表达式模式
-pattern = r'(\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b \d{1,2} \d{2}:\d{2}:\d{2})\s+(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'
-
+#pattern = r'(\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b \d{1,2} \d{2}:\d{2}:\d{2})\s+(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'
+pattern = r'(\(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b \d{1,2} \d{2}:\d{2}:\d{2})\s+(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'
+#pattern = r'^(\d{4}-\d{2}-\d{2})(.+)((?:\d{1,3}.){3}\d{1,3})$'
 # 读取文件内容
 with open('example.txt', 'r') as file:
-        content = file.read()
+        content = file.readline()
+        print(content)
 
         # 查找所有匹配的日期和IP地址
         matches = re.findall(pattern, content)
