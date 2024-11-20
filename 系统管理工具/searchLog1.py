@@ -11,6 +11,8 @@ pattern = r'(\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b \d{1,2} \d{
 ip_pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}\b'
 #pattern = r'^(\d{4}-\d{2}-\d{2})(.+)((?:\d{1,3}.){3}\d{1,3})$'
 # 读取文件内容
+# todo 
+# 根据登录日志，查找多次尝试登录失败的用户，添加进防火墙
 with open('example.txt', 'r') as file:
         content = file.read()
         print(content)
