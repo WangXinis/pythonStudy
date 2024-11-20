@@ -4,13 +4,13 @@ import time
 # 定义一个函数，用于线程执行的任务
 def print_numbers():
     for i in range(5):
-        time.sleep(1)
+        time.sleep(i)
         print(i)
 
 # 定义另一个函数，用于线程执行的任务
 def print_letters():
     for letter in 'ABCDE':
-        time.sleep(1.2)
+        time.sleep(3)
         print(letter)
 
 # 创建线程对象，target是线程要执行的函数名，args是传递给函数的参数（以元组形式）
