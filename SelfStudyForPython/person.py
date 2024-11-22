@@ -8,6 +8,10 @@ class Person:
         self.pay=pay
     def talk(self):
         print("Hi,I am "+self.name)
+    def lastanme(self):
+        return self.name.split()[-1]
+    def giveRaise(self,percent):
+        self.pay=int(self.pay*(1+percent))
 bob=Person('Bob Smith',job="DEV",pay=10000)
 sum=Person('Sum Smith')
 print(bob.name,bob.pay)
