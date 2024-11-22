@@ -12,7 +12,18 @@ class Person:
         return self.name.split()[-1]
     def giveRaise(self,percent):
         self.pay=int(self.pay*(1+percent))
+"""
 bob=Person('Bob Smith',job="DEV",pay=10000)
 sum=Person('Sum Smith')
 print(bob.name,bob.pay)
 print(sum.name,sum.pay)
+"""
+if __name__=="__main__":
+    bob=Person('Bob Smith',job="DEV",pay=10000)
+    sum=Person('Sum Smith')
+    print(bob.name,bob.pay)
+    print(sum.name,sum.pay)
+
+    print(bob.lastanme(),sum.lastanme())
+    bob.giveRaise(.10)
+    print(bob.pay)
