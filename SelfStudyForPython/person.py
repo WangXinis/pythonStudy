@@ -12,12 +12,18 @@ class Person:
         return self.name.split()[-1]
     def giveRaise(self,percent):
         self.pay=int(self.pay*(1+percent))
+    def __str__(self) -> str:
+        return "[Person: %s,%s,%s]"%(self.name,self.job,self.pay)
 """
 bob=Person('Bob Smith',job="DEV",pay=10000)
 sum=Person('Sum Smith')
 print(bob.name,bob.pay)
 print(sum.name,sum.pay)
 """
+class Manager(Person):
+    def giveRaise(self,percent,bonus=.10):
+        #self.pay=int(self.pay*(1+percent+bonus))
+        Person.giveRaise(self,percent+bonus)
 if __name__=="__main__":
     bob=Person('Bob Smith',job="DEV",pay=10000)
     sum=Person('Sum Smith')
@@ -27,3 +33,9 @@ if __name__=="__main__":
     print(bob.lastanme(),sum.lastanme())
     bob.giveRaise(.10)
     print(bob.pay)
+    print(sum,bob)
+
+    tom=Manager('Tom Doe','mgr',50000)
+    tom.giveRaise(.10)
+    print(tom.lastanme(),tom.pay)
+    print(tom)
