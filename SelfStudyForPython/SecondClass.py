@@ -6,8 +6,9 @@ import FirstClass
 
 class SecondClass(FirstClass.FirstClass):
     def display(self):
-        print("Current Value：%s"%self.data)
+        print("Current Value：%s" % self.data)
 
-z=SecondClass()
+z = SecondClass()
 z.setdata(20)
 z.display()
+
