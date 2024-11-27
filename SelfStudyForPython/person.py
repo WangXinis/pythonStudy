@@ -26,6 +26,9 @@ class Manager(Person):
     def giveRaise(self,percent,bonus=.10):
         #self.pay=int(self.pay*(1+percent+bonus))
         Person.giveRaise(self,percent+bonus)
+    def __getattr__(self,attr):
+        return getattr(self,attr)
+
 if __name__=="__main__":
     bob=Person('Bob Smith',job="DEV",pay=10000)
     sum=Person('Sum Smith')
