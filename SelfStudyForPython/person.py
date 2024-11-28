@@ -28,6 +28,17 @@ class Manager(Person):
         Person.giveRaise(self,percent+bonus)
     def __getattr__(self,attr):
         return getattr(self,attr)
+class DepartMent():
+    def __init__(self,*args):
+        self.members=list(args)
+    def addmember(self,person):
+        self.members.append(person)
+    def giveRaise(self,percent):
+        for person in self.members:
+            person.giveRaise(percent)
+    def showAllperson(self):
+        for person in self.members:
+            print(person)
 
 if __name__=="__main__":
     bob=Person('Bob Smith',job="DEV",pay=10000)
@@ -50,3 +61,8 @@ if __name__=="__main__":
     for obj in (bob,sum,tom):
         obj.giveRaise(.10)
         print(obj)
+    print("DepartMent")
+    develement=DepartMent(bob,sum)
+    develement.addmember(tom)
+    develement.giveRaise(.10)
+    develement.showAllperson()
